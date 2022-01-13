@@ -3,6 +3,11 @@
       <div class="content-container">
           --> Content goes here
       </div>
+      <div class="cards-container">
+          <ul>
+              <li><img src="../assets/img/buy-comics-digital-comics.png" alt=""></li>
+          </ul>
+      </div>
   </div>
 </template>
 
@@ -22,6 +27,12 @@ export default {
         background-color: rgba(0, 0, 0, 0.823);
         color: white;
         font-size: 2em;
-    }
+        }
+
+        .cards-container {
+            background-color: RGB(2, 130, 249);
+        }
+
+
     }
 </style>
