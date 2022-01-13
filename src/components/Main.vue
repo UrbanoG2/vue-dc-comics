@@ -21,7 +21,7 @@
           
       </div>
 
-      
+
   </div>
 </template>
 
@@ -50,7 +50,7 @@ export default {
         .cards-container {
             background-color: RGB(2, 130, 249);
             width: 100%;
-            padding: 1em 0;
+            padding: 2em 0;
             margin: 0 auto;
     
             .cards {
