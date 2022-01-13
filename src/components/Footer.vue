@@ -1,6 +1,12 @@
 <template>
   <div>
-      E questa merda è il footer
+      <div class="footer-top">
+
+      </div>
+
+      <div class="footer-bottom">
+
+      </div>
   </div>
 </template>
 
@@ -10,6 +16,6 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 </style>
