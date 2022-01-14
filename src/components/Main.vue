@@ -3,9 +3,18 @@
       <div class="content-container">
             
       </div>
-      <div class="thumbs-container">
-
-      </div>
+        <div class="thumbs-container">
+            <div class="thumb-container">               
+                <div class="single-thumb" 
+                     v-for="(thumbnail, index) in thumbs"
+                     :key="index">
+                    <div class="thumb-img">
+                      <img :src="thumbnail.thumb" alt="">
+                    </div>
+                    <h2> {{ thumbnail.series }} </h2>
+                </div>
+            </div>
+        </div>
       <div class="cards-container">
 
           <div class="cards">
@@ -33,8 +42,7 @@ export default {
     name:"Main",
     data () {
         return {
-            title:"Elenco thumbnail",
-            thumb: [    
+            thumbs: [    
                 {
                 thumb: "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
                 price: "$19.99",
@@ -130,9 +138,41 @@ export default {
         }
 
         .thumbs-container {
-            height: 500px;
+            margin-top: 4em;
             width: 100%;
             background-color: RGB(50, 50, 50);
+
+            .thumb-container {
+                width: 60%;
+                margin: 0 auto;
+                padding: 2em 0;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+
+                .single-thumb {
+
+                    .thumb-img {
+                        width: 120px;
+                        aspect-ratio: 1;
+                        overflow: hidden;
+                        img {
+                            width:100%;
+                        }
+                    }
+
+                    h2 {
+                        color: white;
+                        text-transform: uppercase;
+                        font-size: 0.8em;
+                        padding-top: 1em;
+                        width: 120px;
+                    }
+                }
+                
+
+                
+            }
         }
 
         .cards-container {
