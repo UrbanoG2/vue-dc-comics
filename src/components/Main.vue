@@ -5,14 +5,17 @@
       </div>
         <div class="thumbs-container">
             <div class="thumb-container">               
-                <div class="single-thumb" 
+                <Thumbnail class="single-thumb" 
                      v-for="(thumbnail, index) in thumbs"
-                     :key="index">
-                    <div class="thumb-img">
+                     :key="index"
+                     :img="thumbnail.thumb"
+                     :name="thumbnail.series"
+                     >
+                    <!-- <div class="thumb-img">
                       <img :src="thumbnail.thumb" alt="">
                     </div>
-                    <h2> {{ thumbnail.series }} </h2>
-                </div>
+                    <h2> {{ thumbnail.series }} </h2> -->
+                </Thumbnail>
             </div>
         </div>
       <div class="cards-container">
@@ -38,8 +41,12 @@
 </template>
 
 <script>
+import Thumbnail from "./Thumbnail.vue";
 export default {
     name:"Main",
+    components: {
+    Thumbnail,
+  },
     data () {
         return {
             thumbs: [    
@@ -152,22 +159,7 @@ export default {
 
                 .single-thumb {
 
-                    .thumb-img {
-                        width: 120px;
-                        aspect-ratio: 1;
-                        overflow: hidden;
-                        img {
-                            width:100%;
-                        }
-                    }
-
-                    h2 {
-                        color: white;
-                        text-transform: uppercase;
-                        font-size: 0.8em;
-                        padding-top: 1em;
-                        width: 120px;
-                    }
+                    
                 }
                 
 
