@@ -137,7 +137,7 @@ export default {
 
         .content-container {
             width: 60%;
-            height: 200px;
+            height: 300px;
             padding-top: 1em;
             margin: 0 auto;
             color: white;
@@ -152,18 +152,12 @@ export default {
             .thumb-container {
                 width: 60%;
                 margin: 0 auto;
-                padding: 2em 0;
+                padding: 4em 0;
                 display: flex;
                 flex-wrap: wrap;
                 gap: 30px;
 
-                .single-thumb {
-
-                    
-                }
-                
-
-                
+            
             }
         }
 

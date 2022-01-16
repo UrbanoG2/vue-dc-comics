@@ -82,7 +82,21 @@
       </div>
 
       <div class="footer-bottom">
+          <div class="footer-bottom-contained">
+                <div class="sign-up-container">
+                    <button><a href="#"> sign-up now! </a></button>
+                </div>
 
+                <div class="follow-container">
+                    <h5>follow us</h5>
+                    <a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a>
+                    <a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a>
+                    <a href="#"><img src="../assets/img/footer-youtube.png" alt=""></a>
+                    <a href="#"><img src="../assets/img/footer-pinterest.png" alt=""></a>
+                    <a href="#"><img src="../assets/img/footer-periscope.png" alt=""></a>
+                </div>
+          </div>
+          
       </div>
       
   </div>
@@ -163,7 +177,60 @@ export default {
 
     .footer-bottom {
         width: 100%;
-        height: 150px;
-        background-color: rgba(54, 44, 44, 0.503);
+        padding: 2em;
+        background-color: rgba(0, 0, 0, 0.816);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .footer-bottom-contained {
+
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            .sign-up-container {
+
+                button {
+                    background-color:rgba(0, 0, 0, 0);
+                    padding: 1em;
+                    border: 2px solid RGB(2, 130, 249);
+
+                    a {
+                        color: white;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
+
+
+                }
+            }
+
+            .follow-container {
+
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                    h5 {
+                        color: RGB(2, 130, 249);
+                        text-transform: uppercase;
+                        font-size: 1.3em;
+                    }
+
+                    img {
+                        margin-left: 2%;
+                    }
+
+                    img:hover {
+                        border:2px solid RGB(2, 130, 249);
+                        border-radius: 50%;
+                    }
+            }
+        }
     }
 </style>
