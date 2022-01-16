@@ -78,24 +78,24 @@
 
             </div>
         </div>
-    </div>
+        </div>
       </div>
 
       <div class="footer-bottom">
-          <div class="footer-bottom-contained">
+            <div class="footer-bottom-contained">
                 <div class="sign-up-container">
                     <button><a href="#"> sign-up now! </a></button>
                 </div>
 
                 <div class="follow-container">
                     <h5>follow us</h5>
-                    <a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a>
-                    <a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a>
-                    <a href="#"><img src="../assets/img/footer-youtube.png" alt=""></a>
+                    <a href="https://www.facebook.com/dc"><img src="../assets/img/footer-facebook.png" alt=""></a>
+                    <a href="https://twitter.com/DCComics"><img src="../assets/img/footer-twitter.png" alt=""></a>
+                    <a href="https://www.youtube.com/dcentertainment"><img src="../assets/img/footer-youtube.png" alt=""></a>
                     <a href="#"><img src="../assets/img/footer-pinterest.png" alt=""></a>
                     <a href="#"><img src="../assets/img/footer-periscope.png" alt=""></a>
                 </div>
-          </div>
+            </div>
           
       </div>
       
@@ -117,57 +117,58 @@ export default {
             background-image: url(../assets/img/footer-bg.jpg);
 
             .top-container {
-            width: 70%;
-            margin: 0 auto;
-            display: flex;
-
-            .footer-top {
-                width:60%;
-                padding: 2em 0;
-                color: rgba(54, 44, 44, 0.503);
-
-                .footer-top-left {
+                width: 70%;
+                margin: 0 auto;
                 display: flex;
-                }
+
+                .footer-top {
+                    width:60%;
+                    padding: 2em 0;
+                    color: rgba(54, 44, 44, 0.503);
+
+                    .footer-top-left {
+                        display: flex;
+                    }
                 
-                .list {
-                    padding-right: 1em;
+                    .list {
+                        padding-right: 1em;
 
-                    ul {
-                        list-style: none;
+                        ul {
+                            list-style: none;
 
-                    .list-title {
-                        color: white;
-                        padding-top: 1em;
+                            .list-title {
+                                color: white;
+                                padding-top: 1em;
 
-                        text-transform: uppercase;
+                                text-transform: uppercase;
 
-                        ul li {
-                            text-transform: none;
+                                ul li {
+                                    text-transform: none;
 
-                            a {
-                                color: rgb(150, 120, 120);
-                                text-decoration: none;
-                                font-size: 0.7em ;
+                                    a {
+                                        color: rgb(150, 120, 120);
+                                        text-decoration: none;
+                                        font-size: 0.7em ;
 
+                                    }
+                                    a:hover {
+                                        text-decoration: underline;
+                                    }
+                                }
                             }
-
                         }
                     }
-                    }
                 }
-                
-            }
 
-            .footer-right {
-                width: 100%;
-                background-image: url(../assets/img/dc-logo-bg.png);
-                background-position: center;
-                background-repeat: no-repeat;
-            }
+                .footer-right {
+                    width: 100%;
+                    background-image: url(../assets/img/dc-logo-bg.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
 
             
-        }
+            }
         }
 
         
@@ -216,20 +217,20 @@ export default {
                 display: flex;
                 align-items: center;
                 gap: 10px;
-                    h5 {
-                        color: RGB(2, 130, 249);
-                        text-transform: uppercase;
-                        font-size: 1.3em;
-                    }
+                h5 {
+                    color: RGB(2, 130, 249);
+                    text-transform: uppercase;
+                    font-size: 1.3em;
+                }
 
-                    img {
-                        margin-left: 2%;
-                    }
+                img {
+                     margin-left: 2%;
+                }
 
-                    img:hover {
-                        border:2px solid RGB(2, 130, 249);
-                        border-radius: 50%;
-                    }
+                img:hover {
+                    border:2px solid RGB(2, 130, 249);
+                    border-radius: 50%;
+                }
             }
         }
     }
